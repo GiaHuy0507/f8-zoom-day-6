@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ----------CV-FLEX---------- */
+.cv-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  justify-content: center;
+  align-items: center;
+}
+.cv-container {
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  flex-direction: row;
+  background: white;
+  width: 70%;
+}
+.cv-infor img {
+  width: 9rem;
+  height: 10rem;
+  display: flex;
+  margin: 0 auto;
+}
+.cv-content {
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  /* background: gray; */
+  flex-direction: column;
+  padding-right: 1rem;
+  flex-grow: 1;
+}
+.cv-side-bar {
+  /* background: gray; */
+  padding: 2.5rem; /* 40px */
+  width: 20.25rem; /* 260px */
+  background: #eee;
+  flex: 0 0 30%;
+}
+.cv-container .bg {
+  background: lightblue;
+  padding: 0.5rem; /* 8px */
+  color: white;
+  text-align: center;
+}
+.cv-container h3 {
+  margin-top: 3rem; /* 48px */
+}
+.cv-container h4 {
+  margin-top: 1.25rem; /* 20px */
+  color: #2c5aa0;
+}
+.cv-infor {
+  background: lightgray;
+  padding: 1.25rem; /* 20px */
+}
+.cv-infor p {
+  margin: 0.625rem 0; /* 10px */
+  color: #444;
+  text-align: center;
+}
+.cv-header {
+  background: lightblue;
+  padding: 0.5rem; /* 8px */
+  color: white;
+  text-align: center;
+}
+.cv-header p {
+  font-size: 2rem; /* 32px */
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+/* ----------PRICING FLEX---------- */
+
+.pricing-page {
+  background: linear-gradient(#020024, #090979, #2c91b0);
+  height: 100vh;
+}
+.pricing {
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  justify-content: center;
+  align-items: center;
+  padding: 10rem; /* 40px */
+}
+
+.card {
+  background: #eee;
+  padding: 2.5rem 1.875rem; /* 40px 30px */
+  border-radius: 0.9375rem; /* 15px */
+  text-align: center;
+  width: 20.25rem; /* 260px */
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card h2 {
+  margin-bottom: 0.9375rem; /* 15px */
+  padding-top: 2.75rem; /* 60px */
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+}
+
+.card h1 {
+  margin-bottom: 1.25rem; /* 20px */
+  font-size: 2rem; /* 32px */
+}
+
+.card h1 span {
+  font-size: 0.875rem; /* 14px */
+  color: #555;
+  padding-bottom: 1rem; /* 16px */
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.card ul li {
+  margin: 0.625rem 0; /* 10px */
+  color: #444;
+  text-align: left;
+  padding-left: 1.5rem; /* 24px */
+  position: relative;
+  margin: 1rem 0; /* 16px */
+}
+
+.card ul li::before {
+  content: "✓";
+  color: #4c5fd5;
+  position: absolute;
+  left: -1.5625rem; /* -25px */
+  top: 0;
+  padding-left: 1.25rem; /* 20px */
+}
+
+.card button {
+  padding: 0.75rem 1.25rem; /* 12px 20px */
+  border: none;
+  border-radius: 0.5rem; /* 8px */
+  background: #4c5fd5;
+  color: white;
+  cursor: pointer; /* Có thể nhấp */
+  margin-top: 3rem; /* 48px */
+}
+
+/* Card nổi bật */
+.card:nth-child(2) {
+  background: #141a36;
+  color: white;
+  transform: scale(1.05);
+}
+
+.card.active ul li {
+  color: #ddd;
+}
+
+.card.active h1 span {
+  color: #bbb;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(40, 50, 100, 0.5);
+}
+
+/* Top Badge */
+.top {
+  position: absolute;
+  top: -0.9375rem; /* 40px */
+  left: 0;
+  width: 100%;
+  background: #4c5fd5;
+  color: white;
+  padding: 0.625rem; /* 10px */
+  border-radius: 0.9375rem 0.9375rem 0 0; /* 15px */
+  font-size: 0.875rem; /* 14px */
+}
+
+/* -------------------INDEX------------------- */
+.body-index {
+  background: #a9c3c3;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #2c5aa0;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.card-index {
+  width: 220px;
+  height: 300px;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid green;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-index h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  color: #0a3d3d;
+}
+
+.card-index .btn {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: 1px solid purple;
+  border-radius: 8px;
+  text-decoration: none;
+  color: purple;
+}
+.card-index .btn:hover {
+  background-color: purple;
+  color: white;
+  transition: all 0.2s ease;
+}
+.card-index .btn:active {
+  transform: scale(0.95);
+}
+.card-index:hover {
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(40, 50, 100, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
