@@ -99,7 +99,7 @@ body {
   padding: 10rem; /* 40px */
 }
 
-.card {
+.pricing .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +166,7 @@ body {
 }
 
 /* Card nổi bật */
-.card:nth-child(2) {
+.pricing .card:nth-child(2) {
   background: #141a36;
   color: white;
   transform: scale(1.05);
@@ -179,7 +179,7 @@ body {
 .card.active h1 span {
   color: #bbb;
 }
-.card:hover {
+.pricing .card:hover {
   transform: scale(1.02);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(40, 50, 100, 0.5);
 }
@@ -257,4 +257,67 @@ h1 {
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(40, 50, 100, 0.5);
   transform: scale(1.05);
   transition: all 0.3s ease;
+}
+/* -------------------Product List------------------- */
+.product-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: lightcoral;
+}
+.product-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: orange;
+}
+
+.product-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(33.33% - 2rem);
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  align-items: center;
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.03) translateY(-10px);
+  transition: all 0.3s ease;
+}
+.product-img-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.buy {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: 1px solid #6aacc3;
+  background: rgb(199, 219, 235);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buy:hover {
+  background-color: #f4f4f4;
 }
