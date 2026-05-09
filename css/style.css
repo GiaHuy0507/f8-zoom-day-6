@@ -218,8 +218,8 @@ h1 {
 }
 
 .card-index {
-  width: 220px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   background: #ddd;
   border-radius: 15px;
   border: 1px solid green;
@@ -231,15 +231,15 @@ h1 {
 }
 
 .card-index h2 {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 2rem;
+  padding: 2rem;
   text-align: center;
   color: #0a3d3d;
 }
 
 .card-index .btn {
-  margin-bottom: 30px;
-  padding: 10px 20px;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
   border: 1px solid purple;
   border-radius: 8px;
   text-decoration: none;
@@ -284,7 +284,7 @@ h1 {
 .product-card {
   display: flex;
   flex-direction: column;
-  flex: 0 0 calc(33.33% - 2rem);
+  flex: 1 1 calc(33.33% - 4rem);
   padding: 0.5rem;
   gap: 0.5rem;
   border-radius: 1rem;
@@ -338,15 +338,16 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  height: 600px;
-  width: 500px;
+  height: 900px;
+  width: 1500px;
 }
 
 .register-form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   flex: 1;
+  font-size: 1.5rem;
 }
 
 .register-form label {
@@ -360,6 +361,7 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .register-btn {
