@@ -85,6 +85,17 @@ body {
   align-items: center;
   font-weight: 700;
 }
+.cv-about-me p {
+  text-indent: 1.25rem; /* 20px */
+  padding-left: 0.5rem;
+}
+.cv-infor a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 0.625rem 0; /* 10px */
+}
 /* ----------PRICING FLEX---------- */
 
 .pricing-page {
@@ -166,14 +177,14 @@ body {
 }
 
 /* Card nổi bật */
-.pricing .card:nth-child(2) {
+/* .pricing .card:nth-child(2) {
   background: #141a36;
   color: white;
   transform: scale(1.05);
-}
+} */
 
 .card.active ul li {
-  color: #ddd;
+  color: black;
 }
 
 .card.active h1 span {
